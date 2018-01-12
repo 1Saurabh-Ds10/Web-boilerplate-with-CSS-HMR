@@ -1,0 +1,33 @@
+/* eslint-disable */
+
+{
+  "presets":[
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": "last 4 versions"
+        },
+        "loose": false,
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "babel-plugin-syntax-dynamic-import",
+    "babel-plugin-dynamic-import-webpack",
+    "babel-plugin-transform-decorators-legacy",
+    "babel-plugin-transform-class-properties"
+  ],
+  "env": {
+    "server": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    },
+    "development": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    },
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}

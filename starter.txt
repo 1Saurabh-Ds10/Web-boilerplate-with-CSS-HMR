@@ -1,0 +1,1 @@
+It has important libraries, EsLint configuration, Babel Configuration for older browsers, Prettier Configuraion, Webpack dev server
